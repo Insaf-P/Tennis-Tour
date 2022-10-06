@@ -22,6 +22,7 @@
           background-position: 50% 0;
           background-repeat:initial;
         }
+        
     </style>
 </head>
 <body>
@@ -160,7 +161,7 @@
 
 <style>
   .reginster-login{
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 9;
@@ -191,25 +192,258 @@
     opacity: 1;
     transform: rotate(90deg);
   }
+  .close-btn{
+	position: absolute;
+	transition: transform .25s, opacity .25s;
+	opacity: .7;
+	cursor: pointer;
+	font-size: 3em;
+	font-family: serif;
+	line-height: 1;
+  position: absolute;
+    right: 30px;
+    color: #fff;
+    top: 20px;
+}
+.close-btn:before{
+	content: "\d7";
+}
+.close-btn:hover{
+	opacity: 1;
+	transform: rotate(90deg);
+}
+section.reginster-login .title {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+    justify-content: center;
+}
+section.reginster-login .title h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #FAFAFA;
+    margin: 0;
+}
+section.reginster-login .title a{
+  font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0DDCD0;
+    margin: 0;
+}
+
+.login-fom-box{
+    position: absolute;
+    width: 460px;
+    top: 32%;
+    display: block;
+    transform: translateY(-50px);
+    left: 58%;
+}
+.register-fom-box {
+    position: absolute;
+    width: 460px;
+    top: 20%;
+    display: block;
+    transform: translateY(-50px);
+    left: 58%;
+}
+form.login-form {
+    display: grid;
+}
+form.register-form{
+  display: grid;
+}
+.register-fom-box h2,
+.login-fom-box h2{
+  font-style: normal;
+font-weight: 600;
+font-size: 34px;
+line-height: 41px;
+margin-bottom: 40px;
+
+/* White */
+
+color: #FAFAFA;
+}
+
+.login-form label,
+.register-form label{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FAFAFA;
+  margin-bottom: 5px;
+}
+.login-form input,
+.register-form input{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #FAFAFA;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #BDBDBD;
+  padding: 17px;
+  margin-bottom: 30px;
+}
+.login-form input:focus,
+.register-form input:focus{
+  border: 1px solid #0DDCD0;
+}
+.login-form input::placeholder,
+.register-form input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.7;
+  color: #FAFAFA;
+}
+.login-form input[type="submit"],
+.register-form input[type="submit"]{
+  font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+background: #0DDCD0;
+
+color: #1D1D1D;
+border: none;
+}
+.login-form-wrappaer{
+  display: block;
+}
+.register-form-wrappaer{
+  display: none;
+}
+
+/* Loding Animation */
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+    left: inherit;
+    right: 10%;
+    top: 2%;
+    display: none;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.register-form-bg{
+  display: none;
+}
+.login-form-bg{
+  display: block;
+}
+
+
+
 </style>
 <section class="reginster-login">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img class="reginster-login-img" src="assets/img/login-banner.png" alt="" class="img-fluid">
+        <img class="reginster-login-img login-form-bg" src="assets/img/login-banner.png" alt="" class="img-fluid">
+        <img class="reginster-login-img register-form-bg" src="assets/img/register-banner.jpg" alt="" class="img-fluid">
       </div>
-      <div class="col-md-6">
-        <div id="close-popup" class="close-icon"><img src="assets/img/icons/close.svg" alt=""></div>
+      <!-- login Section -->
+      <div class="col-md-6 wrapper-box">
+        <span id="close-popup" class="close-btn"></span>
+        <div class="lds-ripple"><div></div><div></div></div>
+        <div class="login-form-wrappaer">
         <div class="title">
           <h4>Don’t have an account?</h4>
-          <a href="#">Register Now</a>
+          <a href="javascript:void(0)" id="register-form-open">Register Now</a>
         </div>
-        <h3>Login</h3>
-        <form class="login-form" action="">
-            <input type="email" name="" placeholder="Enter Email or Number">
-            <input type="password" name="" id="" placeholder="Enter your password here">
-        </form>
-      </div>
+        <div class="login-fom-box">
+          <h2>Login</h2>
+          <form class="login-form" action="">
+            <label for="">Email / Mobile Number</label>
+              <input type="text" placeholder="Enter Email or Number">
+              <label for="">Password</label>
+              <input type="password" placeholder="Enter your password here">
+              <input type="submit" value="Login">
+          </form>
+        </div>
+        </div>
+
+        <!-- register Section -->
+        <div class="register-form-wrappaer">
+        <div class="title">
+          <h4>Already have an account?</h4>
+          <a href="javascript:void(0)" id="login-form-open">Login</a>
+        </div>
+        <div class="register-fom-box">
+          <h2>Register</h2>
+          <form class="register-form" action="">
+            <label for="">Full Name</label>
+              <input type="text" placeholder="Enter your Name">
+              <label for="">Email</label>
+              <input type="email" placeholder="Enter Email">
+              <label for="">Mobile Number</label>
+              <input type="text" placeholder="Enter Number">
+              <label for="">Password</label>
+              <input type="password" placeholder="Enter your password here">
+              <label for="">Confirm Password</label>
+              <input type="password" placeholder="Enter your password again">
+              <input type="submit" value="Register Now">
+          </form>
+        </div>
+        </div>
+    </div>
     </div>
   </div>
 </section>
@@ -1113,15 +1347,54 @@ p.count-text {
   })
   
 
-  // Register-Login-popup
+  // register-Login-popup
 
   $("#login-popup").click(function(){
     $(".reginster-login").show()
+    $(".reginster-login").css({'position':'fixed','top':'0','max-height': '100vh', 'overflow':'auto'})
+    $("body").css({ overflow: 'hidden' })
   })
   $("#close-popup").click(function(){
     $(".reginster-login").hide()
+    $('.reginster-login').css({'position':'relative'})  
+    $("body").css({ overflow: 'visible' })
+  })
+
+  // Register Form open
+
+
+  $(document).ready( () =>{
+    let registerForm = $("#register-form-open")
+    let loginForm = $("#login-form-open")
+    let registerWrapper = $(".register-form-wrappaer")
+    let loginrWrapper = $(".login-form-wrappaer")
+    $(registerForm).click(()=> {
+      $(".lds-ripple").fadeIn(800).fadeOut()
+      setTimeout(
+            function() {
+              $(loginrWrapper).hide()
+              $(registerWrapper).show()
+              $(".login-form-bg").hide()
+              $(".register-form-bg").show()
+            },
+            1000);
+
+    })
+    $(loginForm).click(()=>{
+      $(".lds-ripple").fadeIn(1000).fadeOut()
+      setTimeout(
+            function() {
+              $(loginrWrapper).show()
+              $(registerWrapper).hide()
+              $(".login-form-bg").show()
+              $(".register-form-bg").hide()
+            },
+            1000);
+    })
 
   })
+
+  
 </script>
 </body>
 </html>
