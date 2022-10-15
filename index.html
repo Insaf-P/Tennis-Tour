@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>Tennis Tour</title>
 
@@ -243,7 +246,7 @@ section.reginster-login .title a{
 .login-fom-box{
     position: absolute;
     width: 460px;
-    top: 32%;
+    top: 40%;
     display: block;
     transform: translateY(-50px);
     left: 58%;
@@ -251,7 +254,7 @@ section.reginster-login .title a{
 .register-fom-box {
     position: absolute;
     width: 460px;
-    top: 20%;
+    top: 30%;
     display: block;
     transform: translateY(-50px);
     left: 58%;
@@ -389,8 +392,111 @@ border: none;
   display: block;
 }
 
+.privacy-policy{
+  display: flex;
+}
+.privacy-policy p{
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 10px;
+  
+  /* Gray 5 */
+  
+  color: #E0E0E0;
+}
+.privacy-policy a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #0DDCD0;
+    text-decoration: none;
+}
+.privacy-policy a span{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+/* Gray 5 */
+
+color: #E0E0E0;
+}
 
 
+.privacy-policy-check {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.privacy-policy-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.privacy-policy-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.privacy-policy-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.privacy-policy-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.privacy-policy-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.privacy-policy-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 </style>
 <section class="reginster-login">
   <div class="container">
@@ -439,6 +545,14 @@ border: none;
               <input type="password" placeholder="Enter your password here">
               <label for="">Confirm Password</label>
               <input type="password" placeholder="Enter your password again">
+              <div class="privacy-policy">
+                <label class="privacy-policy-check">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              <p>I agree with Tennis Tournament <a href="">Terms <span>&</span> Privacy Policy</a></p>
+              
+              </div>
               <input type="submit" value="Register Now">
           </form>
         </div>
@@ -664,6 +778,8 @@ p.count-text {
     text-align: center;
     color: #FAFAFA;
 }
+
+
   </style>
 
  
