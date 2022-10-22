@@ -1,1552 +1,1564 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <title>Tennis Tour</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+		<title>Tennis Tour</title>
 
-    <style>
-        body{
-          background-color: #2B627D;
-          font-family: 'Montserrat';
-          background-image: url(assets/img/backgbound-patter.png);
-          background-position: 50% 0;
-          background-repeat:initial;
-        }
-        
-    </style>
-</head>
-<body>
-  <style>
-    /* Root Access */
-  :root{
-    --background-color:#2B627D;
-    --main-font-family:'Montserrat';
-    --pragraph-font:'Montserrat';
-  }
-  .main-header{
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 54px;
-    /* text-align: center; */
-    text-transform: uppercase;
-    color: #F6F6F7;
-  }
+		<style>
+			body {
+				background-color: #2b627d;
+				font-family: 'Montserrat';
+				background-image: url(assets/img/backgbound-patter.png);
+				background-position: 50% 0;
+				background-repeat: initial;
+			}
+		</style>
+	</head>
+	<body>
+		<style>
+			/* Root Access */
+			:root {
+				--background-color: #2b627d;
+				--main-font-family: 'Montserrat';
+				--pragraph-font: 'Montserrat';
+			}
+			.main-header {
+				font-weight: 600;
+				font-size: 44px;
+				line-height: 54px;
+				/* text-align: center; */
+				text-transform: uppercase;
+				color: #f6f6f7;
+			}
 
-  .btn-1{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #1D1D1D;
-    text-decoration: none;
-    background-color: #0DDCD0;
-    padding: 11px 20px;
-    border: 1px solid #0DDCD0;
-  }
-  .btn-2{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    text-decoration: none;
-    color: #FAFAFA;
-    padding: 11px 20px;
-    border: 1px solid #fff;
-  }
+			.btn-1 {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 17px;
+				color: #1d1d1d;
+				text-decoration: none;
+				background-color: #0ddcd0;
+				padding: 11px 20px;
+				border: 1px solid #0ddcd0;
+			}
+			.btn-2 {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 17px;
+				text-align: center;
+				text-decoration: none;
+				color: #fafafa;
+				padding: 11px 20px;
+				border: 1px solid #fff;
+			}
 
-  nav ul li{
-    text-decoration: none;
-    list-style: none;
-  }
-  /* Header Section */
-  nav.navbar.navbar-expand-lg.navbar-light {
-    padding: 0 80px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-  div#navbarScroll {
-    margin-left: 82px;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 30px;
-    padding-left: 30px;
-}
+			nav ul li {
+				text-decoration: none;
+				list-style: none;
+			}
+			/* Header Section */
+			nav.navbar.navbar-expand-lg.navbar-light {
+				padding: 0 80px;
+				margin-top: 40px;
+				margin-bottom: 20px;
+			}
+			div#navbarScroll {
+				margin-left: 82px;
+			}
+			.navbar-expand-lg .navbar-nav .nav-link {
+				padding-right: 30px;
+				padding-left: 30px;
+			}
 
-    .nav-link{
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      color: #F6F6F7;
-    }
-    .nav-link:focus, .nav-link:hover,
-    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: #fff;
-}
+			.nav-link {
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				color: #f6f6f7;
+			}
+			.nav-link:focus,
+			.nav-link:hover,
+			.navbar-nav .nav-link.active,
+			.navbar-nav .show > .nav-link {
+				color: #fff;
+			}
+		</style>
 
-  </style>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt="" /></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarScroll"
+					aria-controls="navbarScroll"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarScrollingDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Tournaments
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider" /></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarScrollingDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Rankings
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider" /></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="media.html">Media</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="login">
+					<ul>
+						<li class="user-login">
+							<a id="login-popup" class="nav-link" aria-current="page" href="#">Login / Sign Up</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/img/Logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Tournaments
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Rankings
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Media</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        
-      </div>
-      <div class="login">
-        <ul>
-          <li class="user-login">
-            <a id="login-popup" class="nav-link" aria-current="page" href="#">Login / Sign Up</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+		<!-- Login-form -->
 
-  <!-- Login-form -->
+		<style>
+			.reginster-login {
+				position: absolute;
+				width: 100%;
+				top: 0;
+				z-index: 9;
+				background-color: #2b627d;
+				height: 982px;
+				display: none;
+			}
+			.reginster-login-img {
+				position: absolute;
+				left: 0;
+			}
+			.reginster-login .title {
+				display: flex;
+			}
+			.close-icon {
+				position: absolute;
+				transition: transform 0.25s, opacity 0.25s;
+				opacity: 0.7;
+				cursor: pointer;
+				font-size: 3em;
+				font-family: serif;
+				line-height: 1;
+				right: 40px;
+				top: 40px;
+			}
+			.close-icon:hover {
+				opacity: 1;
+				transform: rotate(90deg);
+			}
+			.close-btn {
+				position: absolute;
+				transition: transform 0.25s, opacity 0.25s;
+				opacity: 0.7;
+				cursor: pointer;
+				font-size: 3em;
+				font-family: serif;
+				line-height: 1;
+				position: absolute;
+				right: 30px;
+				color: #fff;
+				top: 20px;
+			}
+			.close-btn:before {
+				content: '\d7';
+			}
+			.close-btn:hover {
+				opacity: 1;
+				transform: rotate(90deg);
+			}
+			section.reginster-login .title {
+				margin-top: 40px;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				text-align: center;
+				justify-content: center;
+			}
+			section.reginster-login .title h4 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				display: flex;
+				align-items: center;
+				color: #fafafa;
+				margin: 0;
+			}
+			section.reginster-login .title a {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: #0ddcd0;
+				margin: 0;
+			}
 
+			.login-fom-box {
+				position: absolute;
+				width: 460px;
+				top: 40%;
+				display: block;
+				transform: translateY(-50px);
+				left: 58%;
+			}
+			.register-fom-box {
+				position: absolute;
+				width: 460px;
+				top: 30%;
+				display: block;
+				transform: translateY(-50px);
+				left: 58%;
+			}
+			form.login-form {
+				display: grid;
+			}
+			form.register-form {
+				display: grid;
+			}
+			.register-fom-box h2,
+			.login-fom-box h2 {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 34px;
+				line-height: 41px;
+				margin-bottom: 40px;
 
-<style>
-  .reginster-login{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 9;
-    background-color: #2B627D;
-    height: 982px;
-    display: none;
-  }
-  .reginster-login-img{
-    position:absolute;
-    left: 0;
-  }
-  .reginster-login .title{
-    display: flex;
+				/* White */
 
-  }
-  .close-icon {
-    position: absolute;
-	transition: transform .25s, opacity .25s;
-	opacity: .7;
-	cursor: pointer;
-	font-size: 3em;
-	font-family: serif;
-	line-height: 1;
-  right: 40px;
-  top:40px;
-  }
-  .close-icon:hover{
-    opacity: 1;
-    transform: rotate(90deg);
-  }
-  .close-btn{
-	position: absolute;
-	transition: transform .25s, opacity .25s;
-	opacity: .7;
-	cursor: pointer;
-	font-size: 3em;
-	font-family: serif;
-	line-height: 1;
-  position: absolute;
-    right: 30px;
-    color: #fff;
-    top: 20px;
-}
-.close-btn:before{
-	content: "\d7";
-}
-.close-btn:hover{
-	opacity: 1;
-	transform: rotate(90deg);
-}
-section.reginster-login .title {
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
-    justify-content: center;
-}
-section.reginster-login .title h4 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    color: #FAFAFA;
-    margin: 0;
-}
-section.reginster-login .title a{
-  font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #0DDCD0;
-    margin: 0;
-}
+				color: #fafafa;
+			}
 
-.login-fom-box{
-    position: absolute;
-    width: 460px;
-    top: 40%;
-    display: block;
-    transform: translateY(-50px);
-    left: 58%;
-}
-.register-fom-box {
-    position: absolute;
-    width: 460px;
-    top: 30%;
-    display: block;
-    transform: translateY(-50px);
-    left: 58%;
-}
-form.login-form {
-    display: grid;
-}
-form.register-form{
-  display: grid;
-}
-.register-fom-box h2,
-.login-fom-box h2{
-  font-style: normal;
-font-weight: 600;
-font-size: 34px;
-line-height: 41px;
-margin-bottom: 40px;
+			.login-form label,
+			.register-form label {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 22px;
+				color: #fafafa;
+				margin-bottom: 5px;
+			}
+			.login-form input,
+			.register-form input {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
 
-/* White */
+				color: #fafafa;
+				background-color: transparent;
+				outline: none;
+				border: 1px solid #bdbdbd;
+				padding: 17px;
+				margin-bottom: 30px;
+			}
+			.login-form input:focus,
+			.register-form input:focus {
+				border: 1px solid #0ddcd0;
+			}
+			.login-form input::placeholder,
+			.register-form input::placeholder {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
+				opacity: 0.7;
+				color: #fafafa;
+			}
+			.login-form input[type='submit'],
+			.register-form input[type='submit'] {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 22px;
+				text-align: center;
+				background: #0ddcd0;
 
-color: #FAFAFA;
-}
+				color: #1d1d1d;
+				border: none;
+			}
+			.login-form-wrappaer {
+				display: block;
+			}
+			.register-form-wrappaer {
+				display: none;
+			}
 
-.login-form label,
-.register-form label{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #FAFAFA;
-  margin-bottom: 5px;
-}
-.login-form input,
-.register-form input{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+			/* Loding Animation */
+			.lds-ripple {
+				display: inline-block;
+				position: relative;
+				width: 80px;
+				height: 80px;
+				position: absolute;
+				left: inherit;
+				right: 10%;
+				top: 2%;
+				display: none;
+			}
 
-  color: #FAFAFA;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid #BDBDBD;
-  padding: 17px;
-  margin-bottom: 30px;
-}
-.login-form input:focus,
-.register-form input:focus{
-  border: 1px solid #0DDCD0;
-}
-.login-form input::placeholder,
-.register-form input::placeholder{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  opacity: 0.7;
-  color: #FAFAFA;
-}
-.login-form input[type="submit"],
-.register-form input[type="submit"]{
-  font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-background: #0DDCD0;
+			.lds-ripple div {
+				position: absolute;
+				border: 4px solid #fff;
+				opacity: 1;
+				border-radius: 50%;
+				animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+			}
+			.lds-ripple div:nth-child(2) {
+				animation-delay: -0.5s;
+			}
+			@keyframes lds-ripple {
+				0% {
+					top: 36px;
+					left: 36px;
+					width: 0;
+					height: 0;
+					opacity: 0;
+				}
+				4.9% {
+					top: 36px;
+					left: 36px;
+					width: 0;
+					height: 0;
+					opacity: 0;
+				}
+				5% {
+					top: 36px;
+					left: 36px;
+					width: 0;
+					height: 0;
+					opacity: 1;
+				}
+				100% {
+					top: 0px;
+					left: 0px;
+					width: 72px;
+					height: 72px;
+					opacity: 0;
+				}
+			}
 
-color: #1D1D1D;
-border: none;
-}
-.login-form-wrappaer{
-  display: block;
-}
-.register-form-wrappaer{
-  display: none;
-}
+			.register-form-bg {
+				display: none;
+			}
+			.login-form-bg {
+				display: block;
+			}
 
-/* Loding Animation */
-.lds-ripple {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-    left: inherit;
-    right: 10%;
-    top: 2%;
-    display: none;
-}
+			.privacy-policy {
+				display: flex;
+			}
+			.privacy-policy p {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 17px;
+				margin-left: 10px;
 
-.lds-ripple div {
-  position: absolute;
-  border: 4px solid #fff;
-  opacity: 1;
-  border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-}
-.lds-ripple div:nth-child(2) {
-  animation-delay: -0.5s;
-}
-@keyframes lds-ripple {
-  0% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  4.9% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  5% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  100% {
-    top: 0px;
-    left: 0px;
-    width: 72px;
-    height: 72px;
-    opacity: 0;
-  }
-}
+				/* Gray 5 */
 
-.register-form-bg{
-  display: none;
-}
-.login-form-bg{
-  display: block;
-}
+				color: #e0e0e0;
+			}
+			.privacy-policy a {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
 
-.privacy-policy{
-  display: flex;
-}
-.privacy-policy p{
+				color: #0ddcd0;
+				text-decoration: none;
+			}
+			.privacy-policy a span {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 17px;
 
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  margin-left: 10px;
-  
-  /* Gray 5 */
-  
-  color: #E0E0E0;
-}
-.privacy-policy a {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+				/* Gray 5 */
 
-  color: #0DDCD0;
-    text-decoration: none;
-}
-.privacy-policy a span{
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
+				color: #e0e0e0;
+			}
 
-/* Gray 5 */
+			.privacy-policy-check {
+				display: block;
+				position: relative;
+				padding-left: 22px;
+				margin-bottom: 12px;
+				cursor: pointer;
+				font-size: 22px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
 
-color: #E0E0E0;
-}
+			/* Hide the browser's default checkbox */
+			.privacy-policy-check input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				height: 0;
+				width: 0;
+			}
 
+			/* Create a custom checkbox */
+			.checkmark {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 18px;
+				width: 18px;
+				background-color: #eee;
+			}
 
-.privacy-policy-check {
-  display: block;
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+			/* On mouse-over, add a grey background color */
+			.privacy-policy-check:hover input ~ .checkmark {
+				background-color: #ccc;
+			}
 
-/* Hide the browser's default checkbox */
-.privacy-policy-check input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+			/* When the checkbox is checked, add a blue background */
+			.privacy-policy-check input:checked ~ .checkmark {
+				background-color: #2196f3;
+			}
 
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #eee;
-}
+			/* Create the checkmark/indicator (hidden when not checked) */
+			.privacy-policy-check:after {
+				content: '';
+				position: absolute;
+				display: none;
+			}
 
-/* On mouse-over, add a grey background color */
-.privacy-policy-check:hover input ~ .checkmark {
-  background-color: #ccc;
-}
+			/* Show the checkmark when checked */
+			.privacy-policy-check input:checked ~ .checkmark:after {
+				display: block;
+			}
 
-/* When the checkbox is checked, add a blue background */
-.privacy-policy-check input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
+			/* Style the checkmark/indicator */
+			.privacy-policy-check .checkmark:after {
+				left: 9px;
+				top: 5px;
+				width: 5px;
+				height: 10px;
+				border: solid white;
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		</style>
+		<section class="reginster-login">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<img class="reginster-login-img login-form-bg" src="assets/img/login-banner.png" alt="" class="img-fluid" />
+						<img
+							class="reginster-login-img register-form-bg"
+							src="assets/img/register-banner.jpg"
+							alt=""
+							class="img-fluid"
+						/>
+					</div>
+					<!-- login Section -->
+					<div class="col-md-6 wrapper-box">
+						<span id="close-popup" class="close-btn"></span>
+						<div class="lds-ripple">
+							<div></div>
+							<div></div>
+						</div>
+						<div class="login-form-wrappaer">
+							<div class="title">
+								<h4>Don’t have an account?</h4>
+								<a href="javascript:void(0)" id="register-form-open">Register Now</a>
+							</div>
+							<div class="login-fom-box">
+								<h2>Login</h2>
+								<form class="login-form" action="">
+									<label for="">Email / Mobile Number</label>
+									<input type="text" placeholder="Enter Email or Number" />
+									<label for="">Password</label>
+									<input type="password" placeholder="Enter your password here" />
+									<input type="submit" value="Login" />
+								</form>
+							</div>
+						</div>
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.privacy-policy-check:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+						<!-- register Section -->
+						<div class="register-form-wrappaer">
+							<div class="title">
+								<h4>Already have an account?</h4>
+								<a href="javascript:void(0)" id="login-form-open">Login</a>
+							</div>
+							<div class="register-fom-box">
+								<h2>Register</h2>
+								<form class="register-form" action="">
+									<label for="">Full Name</label>
+									<input type="text" placeholder="Enter your Name" />
+									<label for="">Email</label>
+									<input type="email" placeholder="Enter Email" />
+									<label for="">Mobile Number</label>
+									<input type="text" placeholder="Enter Number" />
+									<label for="">Password</label>
+									<input type="password" placeholder="Enter your password here" />
+									<label for="">Confirm Password</label>
+									<input type="password" placeholder="Enter your password again" />
+									<div class="privacy-policy">
+										<label class="privacy-policy-check">
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<p>
+											I agree with Tennis Tournament <a href="">Terms <span>&</span> Privacy Policy</a>
+										</p>
+									</div>
+									<input type="submit" value="Register Now" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-/* Show the checkmark when checked */
-.privacy-policy-check input:checked ~ .checkmark:after {
-  display: block;
-}
+		<!-- Hero Section -->
+		<style>
+			.hero-banner {
+				width: 100%;
+				height: 90vh;
+			}
+			.hero-banner .hero-img {
+				position: absolute;
+				top: 0;
+				z-index: -1;
+				right: 0;
+			}
+			.hero-banner .content-sec {
+				position: absolute;
+				top: 50%;
+				left: 180px;
+				transform: translateY(-50%);
+			}
 
-/* Style the checkmark/indicator */
-.privacy-policy-check .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-</style>
-<section class="reginster-login">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <img class="reginster-login-img login-form-bg" src="assets/img/login-banner.png" alt="" class="img-fluid">
-        <img class="reginster-login-img register-form-bg" src="assets/img/register-banner.jpg" alt="" class="img-fluid">
-      </div>
-      <!-- login Section -->
-      <div class="col-md-6 wrapper-box">
-        <span id="close-popup" class="close-btn"></span>
-        <div class="lds-ripple"><div></div><div></div></div>
-        <div class="login-form-wrappaer">
-        <div class="title">
-          <h4>Don’t have an account?</h4>
-          <a href="javascript:void(0)" id="register-form-open">Register Now</a>
-        </div>
-        <div class="login-fom-box">
-          <h2>Login</h2>
-          <form class="login-form" action="">
-            <label for="">Email / Mobile Number</label>
-              <input type="text" placeholder="Enter Email or Number">
-              <label for="">Password</label>
-              <input type="password" placeholder="Enter your password here">
-              <input type="submit" value="Login">
-          </form>
-        </div>
-        </div>
+			.hero-banner .content-sec h2 {
+				font-family: var(--main-font-family);
+				font-style: normal;
+				font-weight: 600;
+				font-size: 60px;
+				line-height: 73px;
+				letter-spacing: 0.05em;
+				color: #ffffff;
+			}
+			.hero-banner .content-sec span {
+				font-family: var(--main-font-family);
+				font-style: normal;
+				font-weight: 600;
+				font-size: 60px;
+				line-height: 73px;
+				letter-spacing: 0.05em;
+				-webkit-text-stroke: 1px #0ddcd0;
+				color: transparent;
+			}
+			.hero-banner .content-sec p {
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 30px;
+				color: #ffffff;
+				margin-top: 20px;
+			}
+			a.main-btn {
+				font-family: var(--main-font-family);
+				font-style: normal;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 22px;
+				text-align: center;
+				color: #1d1d1d;
+				background: #0ddcd0;
+				padding: 18px;
+				text-decoration: none;
+				margin-top: 25px;
+				display: inline-block;
+			}
+		</style>
+		<section class="hero-banner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="content-sec">
+							<div class="title">
+								<h2>Grow The Game</h2>
+								<!-- <span>17th December</span> -->
+								<p>
+									TennisTour.ae is partnering with the best academies in the best <br />
+									locations to bring you the complete tournament experience
+								</p>
+							</div>
+							<div class="main-cta">
+								<a class="main-btn" href="#">View Schedule</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="hero-img">
+							<img src="assets/img/Tennis-girl.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hero Section -->
 
-        <!-- register Section -->
-        <div class="register-form-wrappaer">
-        <div class="title">
-          <h4>Already have an account?</h4>
-          <a href="javascript:void(0)" id="login-form-open">Login</a>
-        </div>
-        <div class="register-fom-box">
-          <h2>Register</h2>
-          <form class="register-form" action="">
-            <label for="">Full Name</label>
-              <input type="text" placeholder="Enter your Name">
-              <label for="">Email</label>
-              <input type="email" placeholder="Enter Email">
-              <label for="">Mobile Number</label>
-              <input type="text" placeholder="Enter Number">
-              <label for="">Password</label>
-              <input type="password" placeholder="Enter your password here">
-              <label for="">Confirm Password</label>
-              <input type="password" placeholder="Enter your password again">
-              <div class="privacy-policy">
-                <label class="privacy-policy-check">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-              <p>I agree with Tennis Tournament <a href="">Terms <span>&</span> Privacy Policy</a></p>
-              
-              </div>
-              <input type="submit" value="Register Now">
-          </form>
-        </div>
-        </div>
-    </div>
-    </div>
-  </div>
-</section>
+		<!-- About Section -->
+		<style>
+			.about-wrapper {
+				position: relative;
+				background-image: url(assets/img/about-bg.jpg);
+				width: 100%;
+				height: 1090px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: 50% 0%;
+			}
+			.about-content {
+				text-align: center;
+				width: 927px;
+				justify-self: center;
+				margin: 0 auto;
+				padding-bottom: 60px;
+				margin-top: 6rem;
+			}
+			.about-content h2 {
+				font-family: var(--main-font-family);
+				font-style: normal;
+				font-weight: 600;
+				font-size: 44px;
+				line-height: 54px;
+				color: #ffffff;
+			}
+			.about-content span {
+				color: #fff;
+				font-size: 18px;
+				font-weight: 500;
+				margin-bottom: 25px;
+				display: inline-block;
+			}
+			.about-content p {
+				font-family: var(--main-font-family);
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				color: #fafafa;
+				margin-top: 40px;
+			}
+			.event-cta {
+				display: flex;
+				justify-content: space-between;
+			}
+			.tournaments {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 17px;
+				color: #1d1d1d;
+				text-decoration: none;
+				background-color: #0ddcd0;
+				padding: 11px 20px;
+				border: 1px solid #0ddcd0;
+			}
+			.ranking {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 17px;
+				text-align: center;
+				text-decoration: none;
 
+				color: #fafafa;
+				padding: 11px 20px;
+				border: 1px solid #fff;
+			}
+			.caption h1 {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 34px;
+				line-height: 41px;
 
-  <!-- Hero Section -->
-  <style>
-    .hero-banner{
-      width: 100%;
-      height: 90vh;
-    }
-    .hero-banner .hero-img {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    right: 0;
-}
-.hero-banner .content-sec {
-    position: absolute;
-    top: 50%;
-    left: 180px;
-    transform: translateY(-50%);
-   
-}
+				color: #ffffff;
+			}
 
-.hero-banner .content-sec h2{
-  font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 73px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
+			.event-wrapper {
+				position: relative;
+				width: 100%;
+				height: 360px;
+				border: 2px solid transparent;
+				padding: 7px;
+				transition: border 0.2s ease-in;
+			}
+			.event-wrapper:hover {
+				border: 2px solid #0ddcd0;
+				padding: 7px;
+				transition: border 0.2s ease-in;
+			}
+			.event-wrapper {
+				margin-top: -70px;
+			}
+			.event-wrapper {
+				position: relative;
+			}
+			.caption-wrapper {
+				transform: translateY(-128px);
+				width: 100%;
+				margin: 0;
+				padding: 19px;
+				align-items: center;
+				background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 79.33%), url(image.png);
+			}
+			h3.count-number {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 28px;
+				line-height: 34px;
+				text-align: center;
+				color: #fafafa;
+			}
+			p.count-text {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 24px;
+				text-align: center;
+				color: #fafafa;
+			}
+			.ranking-content h2 {
+				color: #fff;
+				font-size: 38px;
+				font-weight: 600;
+				margin-bottom: 30px;
+				display: inline-block;
+			}
+			.ranking-content p {
+				color: #fff;
+			}
+		</style>
 
-}
-.hero-banner .content-sec span{
-  font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 73px;
-  letter-spacing: 0.05em;
-  -webkit-text-stroke: 1px #0DDCD0;
-  color: transparent;
+		<section class="about-wrapper">
+			<div class="container">
+				<div class="event-section">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-3 p-2 ranking-content">
+							<h2>Rankings</h2>
+							<p>Here you will find the current rankings for each age group and gender.</p>
+							<p>Please note, only the top 16 players will qualify for the season finals</p>
+						</div>
+						<div class="col-md-3 p-2">
+							<div class="event-wrapper">
+								<div class="event-img">
+									<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
+									<div class="caption-wrapper">
+										<div class="caption">
+											<h1>U12 LEAGUE</h1>
+										</div>
+										<div class="event-cta">
+											<a class="tournaments" href="#">Tournaments</a>
+											<a class="ranking" href="#">Rankings</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 p-2">
+							<div class="event-wrapper">
+								<div class="event-img">
+									<img src="assets/img/Rank/2.jpg" alt="" class="img-fluid" />
+								</div>
+								<div class="caption-wrapper">
+									<div class="caption">
+										<h1>U14 LEAGUE</h1>
+									</div>
+									<div class="event-cta">
+										<a class="tournaments" href="#">Tournaments</a>
+										<a class="ranking" href="#">Rankings</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 p-2">
+							<div class="event-wrapper">
+								<div class="event-img">
+									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
+								</div>
+								<div class="caption-wrapper">
+									<div class="caption">
+										<h1>U16 LEAGUE</h1>
+									</div>
+									<div class="event-cta">
+										<a class="tournaments" href="#">Tournaments</a>
+										<a class="ranking" href="#">Rankings</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-content">
+						<span>About</span>
+						<h2>Mission Statement</h2>
+						<p>
+							To provide a comprehensive tournament infrastructure for all tennis players in UAE from Mini Red Tennis
+							through to Professional. Working closely with academies to increase participation, competition and
+							ultimately to increase the standard of tennis in the UAE.
+						</p>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-center statics">
+					<div class="col-md-3 text-center">
+						<h3 class="count-number counter">430</h3>
+						<p class="count-text">Matches</p>
+					</div>
+					<div class="col-md-3 text-center">
+						<h3 class="count-number counter">50</h3>
+						<p class="count-text">Tournaments</p>
+					</div>
+					<div class="col-md-3 text-center">
+						<h3 class="count-number counter">968</h3>
+						<p class="count-text">Players</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Section -->
 
-}
-.hero-banner .content-sec p{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 30px;
-  color: #FFFFFF;
-  margin-top: 20px;
-} 
-a.main-btn {
-    font-family: var(--main-font-family);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #1D1D1D;
-    background: #0DDCD0;
-    padding: 18px;
-    text-decoration: none;
-    margin-top: 25px;
-    display: inline-block;
-}
+		<!-- Tournament Section -->
+		<style>
+			.tournament {
+				position: relative;
+				padding: 100px 0;
+			}
+			.tournament h2 {
+				font-weight: 600;
+				font-size: 44px;
+				line-height: 54px;
+				color: #ffffff;
+			}
+			.tournament p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				color: #fafafa;
+				margin-top: 40px;
+				margin-bottom: 60px;
+			}
+			.tournament .tournament-event-box {
+				position: relative;
+				border: 2px solid rgba(250, 250, 250, 0.2);
+				padding: 40px;
+				transition: all 0.5s ease-in-out;
+				cursor: pointer;
+			}
+			.tournament .tournament-event-box:hover {
+				transform: scale(1.1);
+				border: 2px solid #0ddcd0;
+				transition: all 0.5s ease-in-out;
+			}
+			.tournament .tournament-event-box .title {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 29px;
+				color: #f6f6f7;
+				margin-bottom: 40px;
+			}
+			.tournament .tournament-event-box .location {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 22px;
+				color: #f6f6f7;
+				opacity: 0.8;
+				margin-bottom: 12px;
+			}
+			.tournament .tournament-event-box .date-time {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 22px;
+				color: #f6f6f7;
+				opacity: 0.8;
+			}
+			.tournament .tournament-event-box .badge {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+				color: #f6f6f7;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				background: rgba(250, 250, 250, 0.1);
+				border-radius: 0;
+				padding: 5px 12px;
+			}
+			.tournament .tournament-event-box .details-cta {
+				display: flex;
+				gap: 22px;
+				margin-top: 24px;
+			}
+		</style>
 
-  </style>
-  <section class="hero-banner">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="content-sec">
-              <div class="title">
-                <h2>Grow The Game</h2>
-                <!-- <span>17th December</span> -->
-                <p>TennisTour.ae is partnering with the best academies in the best <br> locations to bring you the complete tournament experience</p>
-              </div>
-              <div class="main-cta">
-                <a class="main-btn" href="#">View Schedule</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="hero-img">
-              <img src="assets/img/Tennis-girl.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- Hero Section -->
+		<section class="tournament">
+			<div class="container-fluid">
+				<div class="row d-flex justify-content-center">
+					<h2 class="main-header text-center">TOURNAMENTS</h2>
+					<p class="text-center">Here you will find the scheduled tournaments for your age group and gender</p>
 
-<!-- About Section -->
-  <style>
-    .about-wrapper{
-      position: relative;
-      background-image: url(assets/img/about-bg.jpg);
-      width: 100%;
-      height: 1090px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 0%;
-    }
-    .about-content{
-      text-align: center;
-      width: 927px;
-      justify-self: center;
-      margin: 0 auto;
-      padding-bottom: 60px;
-      margin-top: 6rem;
-    }
-    .about-content h2{
-      font-family: var(--main-font-family);
-      font-style: normal;
-      font-weight: 600;
-      font-size: 44px;
-      line-height: 54px;
-      color: #FFFFFF;
-      
-    }
-    .about-content span{
-      color: #fff;
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 25px;
-      display: inline-block;
-    }
-    .about-content p{
-      font-family: var(--main-font-family);
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: center;
-      color: #FAFAFA;
-      margin-top: 40px;
-    }
-    .event-cta{
-      display: flex;
-      justify-content: space-between;
-    }
-  .tournaments{
-    font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px;
-      color: #1D1D1D;
-      text-decoration: none;
-      background-color: #0DDCD0;
-      padding: 11px 20px;
-      border: 1px solid  #0DDCD0;
-  }
-  .ranking{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    text-decoration: none;
+					<div class="col-md-3">
+						<div class="tournament-event-box">
+							<div class="badge">Ongoing</div>
+							<div class="title">
+								<h4>Davis Cup World Group II</h4>
+							</div>
+							<div class="location">Dubai Silicon Owasis</div>
+							<div class="date-time">21 September,2022 - 10:30 AM</div>
+							<div class="details-cta">
+								<a class="btn-1" href="#">View Detail</a>
+								<a class="btn-2" href="#">Schedule</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="tournament-event-box">
+							<div class="badge">Upcoming</div>
+							<div class="title">
+								<h4>Fayez Sarofim Clay Court Championship</h4>
+							</div>
+							<div class="location">Dubai Silicon Owasis</div>
+							<div class="date-time">21 September,2022 - 10:30 AM</div>
+							<div class="details-cta">
+								<a class="btn-1" href="#">View Detail</a>
+								<a class="btn-2" href="#">Schedule</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="tournament-event-box">
+							<div class="badge">Upcoming</div>
+							<div class="title">
+								<h4>Rakuten Open Tennis Championships</h4>
+							</div>
+							<div class="location">Dubai Silicon Owasis</div>
+							<div class="date-time">21 September,2022 - 10:30 AM</div>
+							<div class="details-cta">
+								<a class="btn-1" href="#">View Detail</a>
+								<a class="btn-2" href="#">Schedule</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Tournament Section -->
 
-    color: #FAFAFA;
-    padding: 11px 20px;
-    border: 1px solid  #fff;
+		<!-- Medai Section -->
+		<style>
+			.media .main-header {
+				margin-bottom: 40px;
+			}
+			.media .gallery {
+				margin-top: 40px;
+			}
+			.media .strock {
+				display: flex;
+				margin: auto;
+				/* padding: 40px; */
+			}
+			.view-gallery {
+				margin-top: 40px;
+			}
+		</style>
 
+		<section class="media">
+			<div class="container-fluid">
+				<h2 class="main-header text-center">Media</h2>
+				<svg class="strock" width="8" height="60" viewBox="0 0 8 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="8" height="60" fill="#F6F6F7" />
+				</svg>
 
-  }
-  .caption h1{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 34px;
-line-height: 41px;
+				<div class="row d-flex justify-content-center gallery">
+					<div class="col-md-2"><img src="assets/img/gallery/G-1.jpg" alt="" class="img-fluid" /></div>
+					<div class="col-md-2"><img src="assets/img/gallery/G-2.jpg" alt="" class="img-fluid" /></div>
+					<div class="col-md-2"><img src="assets/img/gallery/G-3.jpg" alt="" class="img-fluid" /></div>
+					<div class="col-md-2"><img src="assets/img/gallery/G-4.jpg" alt="" class="img-fluid" /></div>
+					<div class="col-md-2"><img src="assets/img/gallery/G-5.jpg" alt="" class="img-fluid" /></div>
+				</div>
+				<div class="view-gallery d-flex justify-content-center">
+					<a class="btn-1" href="#">View All</a>
+				</div>
+			</div>
+		</section>
+		<!-- Medai Section -->
 
-color: #FFFFFF;
-  }
-    
-.event-wrapper {
-    position: relative;
-    width: 100%;
-    height: 360px;
-    border: 2px solid transparent;
-    padding: 7px;
-    transition: border .2s ease-in;
-    
-}
-.event-wrapper:hover{
-  border: 2px solid #0DDCD0;
-    padding: 7px;
-    transition: border .2s ease-in;
+		<!-- Accademies -->
 
-}
-  .event-wrapper {
-    margin-top: -70px;
-}
-.event-wrapper {
-    position: relative;
-}
-.caption-wrapper {
-  transform: translateY(-128px);
-    width: 100%;
-    margin: 0;
-    padding: 19px;
-    align-items: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 79.33%), url(image.png)
-}
-h3.count-number {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
-    text-align: center;
-    color: #FAFAFA;
-}
-p.count-text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #FAFAFA;
-}
-.ranking-content h2{
-  color: #fff;
-  font-size: 38px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  display: inline-block;
-}
-.ranking-content p{
-  color: #fff;
-}
+		<style>
+			.academies {
+				padding: 100px 0;
+			}
+			.swiper {
+				width: 100%;
+				height: 100%;
+				margin-top: 70px;
+			}
 
-
-  </style>
-
- 
- <section class="about-wrapper">
-    
-  <div class="container">
-    <div class="event-section">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-3 p-2 ranking-content">
-          <h2>Rankings</h2>
-          <p>Here you will find the current rankings for each age group and gender.</p>
-            <p>Please note, only the top 16 players will qualify for the season finals
-            </p>
-        </div>
-        <div class="col-md-3 p-2">
-          <div class="event-wrapper">
-            <div class="event-img">
-              <img src="assets/img/Rank/1.jpg" alt="" class="img-fluid">
-              <div class="caption-wrapper">
-                <div class="caption">
-                  <h1>U12 LEAGUE</h1>
-                </div>
-                <div class="event-cta">
-                  <a class="tournaments" href="#">Tournaments</a>
-                  <a class="ranking" href="#">Rankings</a>
-                </div>
-              </div>
-            </div>
-            </div>
-        </div>
-        <div class="col-md-3 p-2">
-          <div class="event-wrapper">
-            <div class="event-img">
-              <img src="assets/img/Rank/2.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="caption-wrapper">
-              <div class="caption">
-                <h1>U14 LEAGUE</h1>
-              </div>
-              <div class="event-cta">
-                <a class="tournaments" href="#">Tournaments</a>
-                <a class="ranking" href="#">Rankings</a>
-              </div>
-            </div>
-            </div>
-        </div>
-        <div class="col-md-3 p-2">
-          <div class="event-wrapper">
-            <div class="event-img">
-              <img src="assets/img/Rank/3.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="caption-wrapper">
-              <div class="caption">
-                <h1>U16 LEAGUE</h1>
-              </div>
-              <div class="event-cta">
-                <a class="tournaments" href="#">Tournaments</a>
-                <a class="ranking" href="#">Rankings</a>
-              </div>
-            </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="about-content">
-        <span>About</span>
-        <h2>Mission Statement</h2>
-      <p>To provide a comprehensive tournament infrastructure for all tennis players in UAE from Mini Red Tennis through to Professional. Working closely with academies to increase participation, competition and ultimately to increase the standard of tennis in the UAE.</p>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center statics">
-      <div class="col-md-3 text-center">
-        <h3 class="count-number counter">430 </h3>
-        <p class="count-text">Matches</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <h3 class="count-number counter">50</h3>
-        <p class="count-text">Tournaments</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <h3 class="count-number counter">968</h3>
-        <p class="count-text">Players</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- About Section -->
-
-<!-- Tournament Section -->
-<style>
-  .tournament{
-    position: relative;
-    padding: 100px 0;
-  }
-  .tournament h2{
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 54px;
-    color: #FFFFFF;
-
-  }
-  .tournament p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FAFAFA;
-    margin-top: 40px;
-    margin-bottom: 60px;
-  }
-  .tournament .tournament-event-box{
-    position: relative;
-    border: 2px solid rgba(250, 250, 250, 0.2);
-    padding: 40px;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-  }
-  .tournament .tournament-event-box:hover{
-    transform: scale(1.1);
-    border: 2px solid #0DDCD0;
-    transition: all .5s ease-in-out;
-
-  }
-  .tournament .tournament-event-box .title{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #F6F6F7;
-    margin-bottom: 40px;
-  }
-  .tournament .tournament-event-box .location{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #F6F6F7;
-    opacity: 0.8;
-    margin-bottom: 12px;
-  }
-  .tournament .tournament-event-box .date-time{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #F6F6F7;
-      opacity: 0.8;
-  }
-  .tournament .tournament-event-box .badge{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #F6F6F7;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: rgba(250, 250, 250, 0.1);
-    border-radius: 0;
-    padding: 5px 12px;
-  }
-  .tournament .tournament-event-box .details-cta{
-    display: flex;
-    gap: 22px;
-    margin-top: 24px;
-  }
-
-</style>
-
-<section class="tournament">
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-          <h2 class="main-header text-center">TOURNAMENTS</h2>
-          <p class="text-center">Here you will find the scheduled tournaments for your age group and gender</p>
-
-            <div class="col-md-3">
-              <div class="tournament-event-box">
-                <div class="badge">Ongoing</div>
-                <div class="title">
-                  <h4>Davis Cup World Group II</h4>
-                </div>
-                <div class="location">Dubai Silicon Owasis</div>
-                <div class="date-time">21 September,2022 - 10:30 AM</div>
-                <div class="details-cta">
-                  <a class="btn-1" href="#">View Detail</a>
-                  <a class="btn-2" href="#">Schedule</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="tournament-event-box">
-                <div class="badge">Upcoming</div>
-                <div class="title">
-                  <h4>Fayez Sarofim Clay Court Championship</h4>
-                </div>
-                <div class="location">Dubai Silicon Owasis</div>
-                <div class="date-time">21 September,2022 - 10:30 AM</div>
-                <div class="details-cta">
-                  <a class="btn-1" href="#">View Detail</a>
-                  <a class="btn-2" href="#">Schedule</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="tournament-event-box">
-                <div class="badge">Upcoming</div>
-                <div class="title">
-                  <h4>Rakuten Open Tennis Championships</h4>
-                </div>
-                <div class="location">Dubai Silicon Owasis</div>
-                <div class="date-time">21 September,2022 - 10:30 AM</div>
-                <div class="details-cta">
-                  <a class="btn-1" href="#">View Detail</a>
-                  <a class="btn-2" href="#">Schedule</a>
-                </div>
-              </div>
-            </div>
-          
-      </div>
-    </div>
-</section>
-<!-- Tournament Section -->
-
-<!-- Medai Section -->
-<style>
-  .media .main-header{
-    margin-bottom: 40px;
-  }
-  .media .gallery{
-    margin-top: 40px;
-  }
-  .media .strock{
-    display: flex;
-    margin: auto;
-    /* padding: 40px; */
-  }
-  .view-gallery{
-    margin-top: 40px;
-  }
-</style>
-
-<section class="media">
-  <div class="container-fluid">
-    <h2 class="main-header text-center">Media</h2>
-    <svg class="strock" width="8" height="60" viewBox="0 0 8 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="8" height="60" fill="#F6F6F7"/>
-      </svg>
-      
-    <div class="row d-flex justify-content-center gallery">
-      <div class="col-md-2"><img src="assets/img/gallery/G-1.jpg" alt="" class="img-fluid"></div>
-      <div class="col-md-2"><img src="assets/img/gallery/G-2.jpg" alt="" class="img-fluid"></div>
-      <div class="col-md-2"><img src="assets/img/gallery/G-3.jpg" alt="" class="img-fluid"></div>
-      <div class="col-md-2"><img src="assets/img/gallery/G-4.jpg" alt="" class="img-fluid"></div>
-      <div class="col-md-2"><img src="assets/img/gallery/G-5.jpg" alt="" class="img-fluid"></div>
-    </div>
-      <div class="view-gallery  d-flex justify-content-center">
-        <a class="btn-1" href="#">View All</a>
-      </div>
-  </div>
-</section>
-<!-- Medai Section -->
-
-<!-- Accademies -->
-
-<style>
-  .academies{
-    padding: 100px 0;
-    
-  }
-  .swiper {
-        width: 100%;
-        height: 100%;
-        margin-top: 70px;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        /* font-size: 18px;
+			.swiper-slide {
+				text-align: center;
+				/* font-size: 18px;
         background: #fff; */
-        
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
 
-      .swiper-slide img {
-        display: block;
-        
-        object-fit: cover;
-      }
-</style>
-<section class="academies">
-  <div class="container">
-    <div class="row">
-      <h2 class="main-header text-center">Academies</h2>
-    </div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="assets/img/accademies-logo/1.png" alt="" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="assets/img/accademies-logo/2.png" alt="" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="assets/img/accademies-logo/3.png" alt="" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="assets/img/accademies-logo/4.png" alt="" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="assets/img/accademies-logo/5.png" alt="" class="img-fluid"></div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Accademies -->
+			.swiper-slide img {
+				display: block;
 
-<!-- Season Winners -->
+				object-fit: cover;
+			}
+		</style>
+		<section class="academies">
+			<div class="container">
+				<div class="row">
+					<h2 class="main-header text-center">Academies</h2>
+				</div>
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="assets/img/accademies-logo/1.png" alt="" class="img-fluid" /></div>
+						<div class="swiper-slide"><img src="assets/img/accademies-logo/2.png" alt="" class="img-fluid" /></div>
+						<div class="swiper-slide"><img src="assets/img/accademies-logo/3.png" alt="" class="img-fluid" /></div>
+						<div class="swiper-slide"><img src="assets/img/accademies-logo/4.png" alt="" class="img-fluid" /></div>
+						<div class="swiper-slide"><img src="assets/img/accademies-logo/5.png" alt="" class="img-fluid" /></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Accademies -->
 
-<style>
-  .season-wiiners{
-    position: relative;
-    padding-bottom: 100px;
-  }
-  .season-wiiners .winners-list-wrapper {
-    background: #4F98B0;
-    border-radius: 20px;
-    padding: 30px;
-}
-.season-wiiners .wiiner-img img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin-top: -82px;
-    margin-bottom: 20px;
-}
-.season-wiiners .winners-list-wrapper .title{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 35px;
-    margin: 0;
+		<!-- Season Winners -->
 
-    color: #FAFAFA;
-}
-.season-wiiners .winners-list-wrapper .season{
-  font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0;
-    color: #FAFAFA;
+		<style>
+			.season-wiiners {
+				position: relative;
+				padding-bottom: 100px;
+			}
+			.season-wiiners .winners-list-wrapper {
+				background: #4f98b0;
+				border-radius: 20px;
+				padding: 30px;
+			}
+			.season-wiiners .wiiner-img img {
+				width: 140px;
+				height: 140px;
+				border-radius: 50%;
+				margin-top: -82px;
+				margin-bottom: 20px;
+			}
+			.season-wiiners .winners-list-wrapper .title {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 19px;
+				line-height: 35px;
+				margin: 0;
 
-}
+				color: #fafafa;
+			}
+			.season-wiiners .winners-list-wrapper .season {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				margin: 0;
+				color: #fafafa;
+			}
 
-.season-wiiners .winners-list-wrapper .card-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.season-wiiners  .col-md-3.winners-box {
-    width: 400px;
-    height: 193px;
-    margin-top: 100px;
-    position: relative;
-}
-.season-wiiners .para{
-  margin: 30px 0;
-  color: #fff;
-  text-align: center;
-  padding: 0 150px;
-}
+			.season-wiiners .winners-list-wrapper .card-box {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.season-wiiners .col-md-3.winners-box {
+				width: 400px;
+				height: 193px;
+				margin-top: 100px;
+				position: relative;
+			}
+			.season-wiiners .para {
+				margin: 30px 0;
+				color: #fff;
+				text-align: center;
+				padding: 0 150px;
+			}
+		</style>
+		<section class="season-wiiners">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="content-sec">
+						<h2 class="main-header text-center">Season</h2>
+						<p class="para">
+							Players will compete in tournaments that are part of the current ‘season’. Ranking points will be earned
+							based on finishing position and count towards their seasonal ranking. The top 16 players from each age
+							group and gender will qualify for the Season Finals where the winner of that competition will be crowned
+							the grand champion.
+						</p>
+						<p class="para">
+							At the start of a new season, ranking points will be reset and all players will start form zero.
+						</p>
+					</div>
+					<div class="col-md-3 winners-box">
+						<div class="winners-list-wrapper">
+							<div class="wiiner-img">
+								<img src="assets/img/season-winner/1.jpg" alt="" class="img-fluid" />
+							</div>
+							<div class="card-box">
+								<div class="details-text">
+									<h4 class="title">Carlton Trapp</h4>
+									<p class="season">Season 3</p>
+								</div>
+								<div class="vew-profile">
+									<a class="btn-2" href="#">View Detail</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 winners-box">
+						<div class="winners-list-wrapper">
+							<div class="wiiner-img">
+								<img src="assets/img/season-winner/2.jpg" alt="" class="img-fluid" />
+							</div>
+							<div class="card-box">
+								<div class="details-text">
+									<h4 class="title">Carlton Trapp</h4>
+									<p class="season">Season 3</p>
+								</div>
+								<div class="details-cta">
+									<a class="btn-2" href="#">View Detail</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 winners-box">
+						<div class="winners-list-wrapper">
+							<div class="wiiner-img">
+								<img src="assets/img/season-winner/3.jpg" alt="" class="img-fluid" />
+							</div>
+							<div class="card-box">
+								<div class="details-text">
+									<h4 class="title">Carlton Trapp</h4>
+									<p class="season">Season 3</p>
+								</div>
+								<div class="vew-profile">
+									<a class="btn-2" href="#">View Detail</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Season Winners -->
 
-</style>
-<section class="season-wiiners">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="content-sec">
-        <h2 class="main-header text-center">Season</h2>
-        <p class="para">Players will compete in tournaments that are part of the current ‘season’. Ranking points will be earned based on finishing position and count towards their seasonal ranking. The top 16 players from each age group and gender will qualify for the Season Finals where the winner of that competition will be crowned the grand champion.</p>
-      <p class="para">At the start of a new season, ranking points will be reset and all players will start form zero.</p>
-      </div>      
-      <div class="col-md-3 winners-box">
-        <div class="winners-list-wrapper">
-          <div class="wiiner-img">
-            <img src="assets/img/season-winner/1.jpg" alt="" class="img-fluid">
-            </div>
-              <div class="card-box">
-                <div class="details-text">
-                  <h4 class="title">Carlton Trapp</h4>
-                  <p class="season">Season 3</p>
-                </div>
-                <div class="vew-profile">
-                  <a class="btn-2" href="#">View Detail</a>
-                </div>
-              </div>
-        </div>
-      </div>
-      <div class="col-md-3 winners-box">
-        <div class="winners-list-wrapper">
-          <div class="wiiner-img">
-            <img src="assets/img/season-winner/2.jpg" alt="" class="img-fluid">
-            </div>
-              <div class="card-box">
-                <div class="details-text">
-                  <h4 class="title">Carlton Trapp</h4>
-                  <p class="season">Season 3</p>
-                </div>
-                <div class="details-cta">
-                  <a class="btn-2" href="#">View Detail</a>
+		<!-- Contact Us -->
 
-                </div>
-              </div>
-        </div>
-      </div>
-      <div class="col-md-3 winners-box">
-        <div class="winners-list-wrapper">
-          <div class="wiiner-img">
-            <img src="assets/img/season-winner/3.jpg" alt="" class="img-fluid">
-            </div>
-              <div class="card-box">
-                <div class="details-text">
-                  <h4 class="title">Carlton Trapp</h4>
-                  <p class="season">Season 3</p>
-                </div>
-                <div class="vew-profile">
-                  <a class="btn-2" href="#">View Detail</a>
-                </div>
-              </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Season Winners -->
+		<style>
+			.contact-us {
+				padding: 100px 290px;
+				padding-top: 40px;
+				margin: auto;
+			}
+			.contact-us .icon {
+				display: flex;
+				align-items: center;
+				align-items: center;
+				margin-bottom: 21px;
+			}
+			.social-icons-list {
+				margin-top: 51px;
+			}
+			.contact-us .icon .list {
+				position: relative;
+				margin-left: 12px;
+			}
+			.contact-us .icon .list h4 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #f6f6f7;
+				margin-bottom: 7px;
 
-<!-- Contact Us -->
+				color: #f6f6f7;
+			}
+			.contact-us .icon .list p {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #f6f6f7;
+				opacity: 0.8;
+				margin: 0;
+			}
+			form.contact-form {
+				display: grid;
+			}
+			.contact-us .contact-form input,
+			.contact-us .contact-form textarea {
+				background: transparent;
+				outline: none;
+				border: none;
+				border: 1px solid #f6f6f7;
+				color: #fff;
+				padding: 24px;
+			}
+			.contact-us .contact-form input:focus,
+			.contact-us .contact-form textarea:focus {
+				border: 1px solid #0ddcd0;
+				transition: all 0.3s ease;
+			}
+			.contact-us .contact-form input {
+				height: 55px;
+				margin-bottom: 24px;
+			}
+			.contact-us .contact-form label {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
+				margin-bottom: 4px;
+				color: #f6f6f7;
+			}
+			.contact-us .contact-form input::placeholder,
+			.contact-us .contact-form textarea::placeholder {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
+				color: #f6f6f7;
+				opacity: 0.6;
+			}
+			.contact-us .contact-form input[type='submit'] {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 0px;
+				text-align: center;
+				color: #1d1d1d;
+				border: none !important;
+				text-align: left;
+				background: #0ddcd0 !important;
+				width: 165px;
+				padding: 20px !important;
+				align-items: end;
+				display: flex;
+				margin-top: 50px;
+			}
+			.contact-us .main-header {
+				margin-bottom: 40px;
+			}
+		</style>
+		<section class="contact-us">
+			<div class="container">
+				<div class="row d-flex justify-content-around">
+					<div class="col-md-6 .justify-content-sm-end">
+						<h2 class="main-header text-left">contact us</h2>
+						<svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect y="8" width="8" height="60" transform="rotate(-90 0 8)" fill="#F6F6F7" />
+						</svg>
+						<div class="social-icons-list">
+							<div class="icon">
+								<img src="assets/img/icons/whats-app-icon.svg" alt="" />
+								<div class="list">
+									<h4>Whatsapp</h4>
+									<p>+971 52 175 0000</p>
+								</div>
+							</div>
+							<div class="icon">
+								<img src="assets/img/icons/phone-icon.svg" alt="" />
+								<div class="list">
+									<h4>Phone</h4>
+									<p>+971 52 175 0000</p>
+								</div>
+							</div>
+							<div class="icon">
+								<img src="assets/img/icons/envolope-icon.svg" alt="" />
+								<div class="list">
+									<h4>Email</h4>
+									<p>info@tennistour.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-<style>
-  .contact-us{
-    padding: 100px 290px;
-    padding-top: 40px;
-    margin: auto;
-  }
-  .contact-us .icon{
-    display: flex;
-    align-items: center;
-    align-items: center;
-    margin-bottom: 21px;
-  }
-  .social-icons-list {
-    margin-top: 51px;
-}
-  .contact-us .icon .list{
-    position: relative;
-    margin-left: 12px;
-  }
-  .contact-us .icon .list h4{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #F6F6F7;
-    margin-bottom: 7px;
+					<div class="col-md-6">
+						<form class="contact-form" action="">
+							<label for="">Name</label>
+							<input type="text" placeholder="Enter Your Name Here" />
+							<label for="">Mobile Number</label>
+							<input type="email" placeholder="Enter Your Mobile Number Here" />
+							<label for="">Enter your Message Here</label>
+							<textarea name="message" id="" cols="30" rows="5" placeholder="Enter your Message Here"></textarea>
+							<input type="submit" value="Send Message" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contact Us -->
 
-    color: #F6F6F7;
-  }
-  .contact-us .icon .list p{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #F6F6F7;
-    opacity: 0.8;
-    margin: 0;
-  }
-  form.contact-form {
-    display: grid;
-}
-.contact-us .contact-form input, 
-.contact-us .contact-form textarea{
-    background: transparent;
-    outline: none;
-    border: none;
-    border: 1px solid #F6F6F7;
-    color: #fff;
-    padding: 24px;
-    
-}
-.contact-us .contact-form input:focus, 
-.contact-us .contact-form textarea:focus{
-  border: 1px solid #0DDCD0;
-  transition: all .3s ease;
-}
-.contact-us .contact-form input{
-  height: 55px;
-  margin-bottom: 24px;
-}
-.contact-us .contact-form label{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 4px;
-  color: #F6F6F7;
-}
-.contact-us .contact-form input::placeholder,
-.contact-us .contact-form textarea::placeholder{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #F6F6F7;
-  opacity: 0.6;
-}
-.contact-us .contact-form input[type="submit"] {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 0px;
-    text-align: center;
-    color: #1D1D1D;
-    border: none !important;
-    text-align: left;
-    background: #0DDCD0 !important;
-    width: 165px;
-    padding: 20px !important;
-    align-items: end;
-    display: flex;
-    margin-top: 50px;
-}
-.contact-us .main-header{
-  margin-bottom: 40px;
-}
-</style>
-<section class="contact-us">
-  <div class="container">
-    <div class="row d-flex justify-content-around">
-      <div class="col-md-6 .justify-content-sm-end">
-        <h2 class="main-header text-left">contact us</h2>
-        <svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect y="8" width="8" height="60" transform="rotate(-90 0 8)" fill="#F6F6F7"/>
-          </svg>
-            <div class="social-icons-list">
-              <div class="icon">
-                <img src="assets/img/icons/whats-app-icon.svg" alt="">
-                  <div class="list">
-                    <h4>Whatsapp</h4>
-                    <p>+971 52 175 0000</p>
-                  </div>
-              </div>
-              <div class="icon">
-                <img src="assets/img/icons/phone-icon.svg" alt="">
-                <div class="list">
-                  <h4>Phone</h4>
-                <p>+971 52 175 0000</p>
-                </div>
-              </div>
-              <div class="icon">
-                <img src="assets/img/icons/envolope-icon.svg" alt="">
-                <div class="list">
-                  <h4>Email</h4>
-                <p>info@tennistour.com</p>
-                </div>
-              </div>
-            </div>
-      </div>
-        
-        <div class="col-md-6">
-            <form class="contact-form" action="">
-              <label for="">Name</label>
-                <input type="text" placeholder="Enter Your Name Here">
-                <label for="">Mobile Number</label>
-                <input type="email" placeholder="Enter Your Mobile Number Here">
-                <label for="">Enter your Message Here</label>
-                <textarea name="message" id="" cols="30" rows="5" placeholder="Enter your Message Here"></textarea>
-                <input type="submit" value="Send Message">
-            </form>
-        </div>
-    </div>
-  </div>
-</section>
-<!-- Contact Us -->
+		<!-- Login-form -->
 
+		<!-- Footer Section -->
 
+		<style>
+			.footer {
+				padding: 180px 290px 60px 290px;
+				background: #4f98b0;
+				position: relative;
+			}
 
-<!-- Login-form -->
+			.footer p {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 25px;
+				text-align: center;
+				color: #fafafa;
 
-<!-- Footer Section -->
+				opacity: 0.8;
+				margin-top: 21px;
+			}
+			.footer .socila-share-icon a {
+				margin-top: 40px;
+				padding: 12px;
+			}
+			.socila-share-icon.text-center {
+				margin-top: 40px;
+			}
+			.footer .copywrite {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 19px;
+				text-align: center;
+				color: #fafafa;
 
-<style>
-  .footer{
-    padding: 180px 290px 60px 290px ;
-    background: #4F98B0;
-    position: relative;
-  
-  }
- 
-  .footer p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #FAFAFA;
+				opacity: 0.8;
+				margin-top: 60px;
+			}
+		</style>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<h2 class="main-header text-center">achieve more in tennis!</h2>
+					<p class="text-center">
+						Tennis Tour’s main objective is to immerse young players into a regulated competitive environment, giving
+						the opportunity to advance their careers from grassroots to professional level.
+					</p>
+					<div class="socila-share-icon text-center">
+						<a href=""><img src="assets/img/icons/facebook.svg" alt="" /></a>
+						<a href=""><img src="assets/img/icons/insta.svg" alt="" /></a>
+						<a href=""><img src="assets/img/icons/youtube.svg" alt="" /></a>
+					</div>
+					<p class="copywrite">Copyright © 2022 Tennis Tour | Powered by Naya Group</p>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Section -->
 
-    opacity: 0.8;
-    margin-top: 21px;
-  }
-  .footer .socila-share-icon a{
-    margin-top: 40px;
-    padding: 12px;
-  }
-  .socila-share-icon.text-center {
-    margin-top: 40px;
-  }
-  .footer .copywrite{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #FAFAFA;
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    opacity: 0.8;
-    margin-top: 60px;
-  }
-</style>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <h2 class="main-header text-center">achieve more in tennis!</h2>
-        <p class="text-center">Tennis Tour’s main objective is to immerse young players into a regulated competitive environment, giving the opportunity to advance their careers from grassroots to professional level.</p>
-          <div class="socila-share-icon text-center">
-            <a href=""><img src="assets/img/icons/facebook.svg" alt=""></a>
-            <a href=""><img src="assets/img/icons/insta.svg" alt=""></a>
-            <a href=""><img src="assets/img/icons/youtube.svg" alt=""></a>
-          </div>
-          <p class="copywrite">Copyright © 2022 Tennis Tour | Powered by Naya Group</p>
-      </div>
-    </div>
-  </div>
-<!-- Footer Section -->
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<script>
+			$(document).ready(() => {
+				// Stats Counetr
+				$('.counter').counterUp({
+					delay: 10,
+					time: 2000,
+				})
+				$('.counter').addClass('animated fadeInDownBig')
+				$('h3').addClass('animated fadeIn')
 
-<script>
-  $(document).ready( () =>{
+				// Accademic Logo
+				var swiper = new Swiper('.mySwiper', {
+					slidesPerView: 1,
+					spaceBetween: 10,
+					// loop:true,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					//   autoplay: {
+					//   delay: 1000,
+					// },
+					breakpoints: {
+						'@0.00': {
+							slidesPerView: 1,
+							spaceBetween: 10,
+						},
+						'@0.75': {
+							slidesPerView: 2,
+							spaceBetween: 20,
+						},
+						'@1.00': {
+							slidesPerView: 3,
+							spaceBetween: 40,
+						},
+						'@1.50': {
+							slidesPerView: 4,
+							spaceBetween: 50,
+						},
+					},
+				})
+			})
 
-    // Stats Counetr
-    $('.counter').counterUp({
-      delay: 10,
-      time: 2000
-    });
-    $('.counter').addClass('animated fadeInDownBig');
-    $('h3').addClass('animated fadeIn');
+			// register-Login-popup
 
-    // Accademic Logo
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        // loop:true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      //   autoplay: {
-      //   delay: 1000,
-      // },
-        breakpoints: {
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          "@0.75": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        },
-      });
+			$('#login-popup').click(function () {
+				$('.reginster-login').show()
+				$('.reginster-login').css({ position: 'fixed', top: '0', 'max-height': '100vh', overflow: 'auto' })
+				$('body').css({ overflow: 'hidden' })
+			})
+			$('#close-popup').click(function () {
+				$('.reginster-login').hide()
+				$('.reginster-login').css({ position: 'relative' })
+				$('body').css({ overflow: 'visible' })
+			})
 
-  })
-  
+			// Register Form open
 
-  // register-Login-popup
-
-  $("#login-popup").click(function(){
-    $(".reginster-login").show()
-    $(".reginster-login").css({'position':'fixed','top':'0','max-height': '100vh', 'overflow':'auto'})
-    $("body").css({ overflow: 'hidden' })
-  })
-  $("#close-popup").click(function(){
-    $(".reginster-login").hide()
-    $('.reginster-login').css({'position':'relative'})  
-    $("body").css({ overflow: 'visible' })
-  })
-
-  // Register Form open
-
-
-  $(document).ready( () =>{
-    let registerForm = $("#register-form-open")
-    let loginForm = $("#login-form-open")
-    let registerWrapper = $(".register-form-wrappaer")
-    let loginrWrapper = $(".login-form-wrappaer")
-    $(registerForm).click(()=> {
-      $(".lds-ripple").fadeIn(800).fadeOut()
-      setTimeout(
-            function() {
-              $(loginrWrapper).hide()
-              $(registerWrapper).show()
-              $(".login-form-bg").hide()
-              $(".register-form-bg").show()
-            },
-            1000);
-
-    })
-    $(loginForm).click(()=>{
-      $(".lds-ripple").fadeIn(1000).fadeOut()
-      setTimeout(
-            function() {
-              $(loginrWrapper).show()
-              $(registerWrapper).hide()
-              $(".login-form-bg").show()
-              $(".register-form-bg").hide()
-            },
-            1000);
-    })
-
-  })
-
-  
-</script>
-</body>
+			$(document).ready(() => {
+				let registerForm = $('#register-form-open')
+				let loginForm = $('#login-form-open')
+				let registerWrapper = $('.register-form-wrappaer')
+				let loginrWrapper = $('.login-form-wrappaer')
+				$(registerForm).click(() => {
+					$('.lds-ripple').fadeIn(800).fadeOut()
+					setTimeout(function () {
+						$(loginrWrapper).hide()
+						$(registerWrapper).show()
+						$('.login-form-bg').hide()
+						$('.register-form-bg').show()
+					}, 1000)
+				})
+				$(loginForm).click(() => {
+					$('.lds-ripple').fadeIn(1000).fadeOut()
+					setTimeout(function () {
+						$(loginrWrapper).show()
+						$(registerWrapper).hide()
+						$('.login-form-bg').show()
+						$('.register-form-bg').hide()
+					}, 1000)
+				})
+			})
+		</script>
+	</body>
 </html>
