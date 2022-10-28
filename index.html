@@ -837,7 +837,7 @@
 				font-family: var(--main-font-family);
 				font-style: normal;
 				font-weight: 600;
-				font-size: 60px;
+				font-size: 48px;
 				line-height: 73px;
 				letter-spacing: 0.05em;
 				color: #ffffff;
@@ -882,11 +882,10 @@
 					<div class="col-md-6">
 						<div class="content-sec">
 							<div class="title">
-								<h2>Join The Tour</h2>
-								<span>Earn Ranking Points</span>
-								<p>
-									Qualify For The Season Finals!
-								</p>
+								<h2>Join The Tour </h2>
+								<h2>Earn ranking points</h2>
+								<h2>Qualify For The Season Finals!</h2>
+									
 							</div>
 							<div class="main-cta">
 								<a class="main-btn" href="#">Season 1 is Live Now!</a>
@@ -962,6 +961,10 @@
 				background-color: #0ddcd0;
 				padding: 11px 20px;
 				border: 1px solid #0ddcd0;
+				transition: all .2s ease;
+			}
+			.tournaments:hover{
+				color: #fff;
 			}
 			.ranking {
 				font-family: 'Montserrat';
@@ -975,6 +978,10 @@
 				color: #fafafa;
 				padding: 11px 20px;
 				border: 1px solid #fff;
+				transition: all .2s ease;
+			}
+			.ranking:hover {
+				color: #0ddcd0;
 			}
 			.caption h1 {
 				font-family: 'Montserrat';
@@ -1000,6 +1007,7 @@
 				transition: border 0.2s ease-in;
 			}
 			/* .event-wrapper {
+				position: relative;
 				margin-top: -70px;
 			} */
 			.event-wrapper {
@@ -1066,202 +1074,25 @@
 		/* .about-wrapper .event-wrapper{
 			height: 100% !important;
 			} */
+			.event-section{
+				top: -70px;
+				position: relative;
+			}
 		</style>
 
 		<section class="about-wrapper">
 			<div class="container">
 				<div class="event-section">
+					
 					<div class="row d-flex justify-content-center">
-						<div class="swiper rankSwiper">
-							<div class="swiper-wrapper">
-							  <div class="swiper-slide">
-									<div class="event-wrapper">
-										<div class="event-img">
-											<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-											<div class="caption-wrapper">
-												<div class="caption">
-													<h1>U8 LEAGUE</h1>
-												</div>
-												<div class="event-cta">
-													<a class="tournaments" href="#">Tournaments</a>
-													<a class="ranking" href="#">Rankings</a>
-												</div>
-											</div>
-										</div>
-									</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U9 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U10 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U11 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U12 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U13 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U14 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U15 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							  <div class="swiper-slide">
-								<div class="event-wrapper">
-									<div class="event-img">
-										<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-										<div class="caption-wrapper">
-											<div class="caption">
-												<h1>U16 LEAGUE</h1>
-											</div>
-											<div class="event-cta">
-												<a class="tournaments" href="#">Tournaments</a>
-												<a class="ranking" href="#">Rankings</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							  </div>
-							</div>
-							<div class="swiper-scrollbar"></div>
-						  </div>
-						
-						<!-- <div class="col-md-6 col-xl-3 col-6 p-2">
-							<div class="event-wrapper">
-								<div class="event-img">
-									<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-									<div class="caption-wrapper">
-										<div class="caption">
-											<h1>U12 LEAGUE</h1>
-										</div>
-										<div class="event-cta">
-											<a class="tournaments" href="#">Tournaments</a>
-											<a class="ranking" href="#">Rankings</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> -->
-						<!-- <div class="col-md-6 col-xl-3 col-6 p-2">
-							<div class="event-wrapper">
-								<div class="event-img">
-									<img src="assets/img/Rank/1.jpg" alt="" class="img-fluid" />
-									<div class="caption-wrapper">
-										<div class="caption">
-											<h1>U12 LEAGUE</h1>
-										</div>
-										<div class="event-cta">
-											<a class="tournaments" href="#">Tournaments</a>
-											<a class="ranking" href="#">Rankings</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 						<div class="col-md-6 col-xl-3 col-6 p-2">
 							<div class="event-wrapper">
 								<div class="event-img">
-									<img src="assets/img/Rank/2.jpg" alt="" class="img-fluid" />
+									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
 								</div>
 								<div class="caption-wrapper">
 									<div class="caption">
-										<h1>U14 LEAGUE</h1>
+										<h1>8u</h1>
 									</div>
 									<div class="event-cta">
 										<a class="tournaments" href="#">Tournaments</a>
@@ -1277,7 +1108,7 @@
 								</div>
 								<div class="caption-wrapper">
 									<div class="caption">
-										<h1>U16 LEAGUE</h1>
+										<h1>9u</h1>
 									</div>
 									<div class="event-cta">
 										<a class="tournaments" href="#">Tournaments</a>
@@ -1285,10 +1116,75 @@
 									</div>
 								</div>
 							</div>
-						</div> -->
+						</div>
+						<div class="col-md-6 col-xl-3 col-6 p-2">
+							<div class="event-wrapper">
+								<div class="event-img">
+									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
+								</div>
+								<div class="caption-wrapper">
+									<div class="caption">
+										<h1>10u</h1>
+									</div>
+									<div class="event-cta">
+										<a class="tournaments" href="#">Tournaments</a>
+										<a class="ranking" href="#">Rankings</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<!-- <div class="row">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-6 col-xl-3 col-6 p-2">
+							<div class="event-wrapper">
+								<div class="event-img">
+									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
+								</div>
+								<div class="caption-wrapper">
+									<div class="caption">
+										<h1>12u</h1>
+									</div>
+									<div class="event-cta">
+										<a class="tournaments" href="#">Tournaments</a>
+										<a class="ranking" href="#">Rankings</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 col-6 p-2">
+							<div class="event-wrapper">
+								<div class="event-img">
+									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
+								</div>
+								<div class="caption-wrapper">
+									<div class="caption">
+										<h1>14u</h1>
+									</div>
+									<div class="event-cta">
+										<a class="tournaments" href="#">Tournaments</a>
+										<a class="ranking" href="#">Rankings</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 col-6 p-2">
+							<div class="event-wrapper">
+								<div class="event-img">
+									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
+								</div>
+								<div class="caption-wrapper">
+									<div class="caption">
+										<h1>16u</h1>
+									</div>
+									<div class="event-cta">
+										<a class="tournaments" href="#">Tournaments</a>
+										<a class="ranking" href="#">Rankings</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				 <!-- <div class="row">
 					<div class="about-content">
 						<span>About</span>
 						<h2>Mission Statement</h2>
@@ -1298,7 +1194,7 @@
 							ultimately to increase the standard of tennis in the UAE.
 						</p>
 					</div>
-				</div> -->
+				</div>  -->
 				
 			</div>
 		</section>
@@ -1538,8 +1434,8 @@
 				</div>
 				<div class="swiper mySwiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="assets/img/accademies-logo/1.png" alt="" class="img-fluid" /></div>
-						<div class="swiper-slide"><img src="assets/img/accademies-logo/2.png" alt="" class="img-fluid" /></div>
+						<div class="swiper-slide"><a href="https://padelpark-dubai.com/" target="_blank"><img src="assets/img/accademies-logo/1.png" alt="" class="img-fluid" /></a></div>
+						<div class="swiper-slide"><a href="https://www.elsclubdubai.com/" target="_blank"><img src="assets/img/accademies-logo/2.png" alt="" class="img-fluid" /></a></div>
 						<div class="swiper-slide"><img src="assets/img/accademies-logo/3.png" alt="" class="img-fluid" /></div>
 						<div class="swiper-slide"><img src="assets/img/accademies-logo/4.png" alt="" class="img-fluid" /></div>
 						<div class="swiper-slide"><img src="assets/img/accademies-logo/5.png" alt="" class="img-fluid" /></div>
