@@ -28,9 +28,9 @@
 
 		<style>
 			body {
-				background-color: #2b627d;
+				background-color: #fff;
 				font-family: 'Montserrat';
-				background-image: url(assets/img/backgbound-patter.png);
+				/* background-image: url(assets/img/backgbound-patter.png); */
 				background-position: 50% 0;
 				background-repeat: initial;
 			}
@@ -50,8 +50,11 @@
 				line-height: 54px;
 				/* text-align: center; */
 				text-transform: uppercase;
-				color: #f6f6f7;
+				color: #334360;
 			}
+            footer .main-header {
+                color:#fff;
+            }
 
 			.btn-1 {
 				font-family: 'Montserrat';
@@ -61,9 +64,10 @@
 				line-height: 17px;
 				color: #1d1d1d;
 				text-decoration: none;
-				background-color: #0ddcd0;
+				background-color: #F08700;
 				padding: 11px 20px;
-				border: 1px solid #0ddcd0;
+				border: 1px solid #F08700;
+                color: #fff;
 			}
 			.btn-2 {
 				font-family: 'Montserrat';
@@ -73,9 +77,9 @@
 				line-height: 17px;
 				text-align: center;
 				text-decoration: none;
-				color: #fafafa;
+				color: #334360;
 				padding: 11px 20px;
-				border: 1px solid #fff;
+				border: 1px solid #334360;
 			}
 
 			nav ul li {
@@ -94,6 +98,7 @@
 			.navbar-expand-lg .navbar-nav .nav-link {
 				padding-right: 30px;
 				padding-left: 30px;
+                color:#F08700 !important;
 			}
 
 			.nav-link {
@@ -101,7 +106,7 @@
 				font-style: normal;
 				font-weight: 600;
 				font-size: 16px;
-				color: #f6f6f7;
+				color: #F08700;
 			}
 			.nav-link:focus,
 			.nav-link:hover,
@@ -174,17 +179,17 @@
 						height: 56vh !important;
 					}
 					.caption h1{
-						font-size: 24px !important;
+						font-size: 28px !important;
 					}
 					.caption-wrapper{
-						padding: 14px !important;
+						padding: 20px !important;
 					}
 					.event-wrapper{
 						height: 254px !important;
 					}
 						.ranking, .tournaments {
 						font-size: 12px !important;
-						padding: 7px 9px !important;
+						padding: 11px 30px !important;
 					}
 					.event-cta{
 						gap: 5px;
@@ -223,6 +228,19 @@
 			}
 
 			@media only screen and (max-width: 524px){
+				.caption-wrapper {
+				transform: translateY(-140px) !important;
+					}
+				.event-wrapper {
+				height: 386px !important;
+				}
+				.event-wrapper{
+					height: 100%;
+				}
+				.event-section{
+					width: 100% !important;
+					top: 0 !important;
+				}
 				.about-wrapper{
 						padding: 40px 0;
 					}
@@ -233,8 +251,8 @@
 						width: 345px !important;
 					}
 					.hero-banner .content-sec h2 {
-				font-size:32px !important;
-				line-height: 52px !important;
+				font-size:28px !important;
+				line-height: 38px !important;
 				}
 				.contact-us,.footer{
 					padding: 40px  !important;
@@ -266,7 +284,7 @@
 					height: 71vh !important;
 				}
 				.hero-banner .content-sec{
-					top: 62% !important;
+					top: 71% !important;
 				}
 				.gallery img{
 					margin-bottom: 20px;
@@ -296,10 +314,10 @@
 				a.ranking {
 				margin-top: 23px !important;
 				display: inline-block;
-				width: 100%;
+				width: auto;
 				}
 					a.tournaments {
-					width: 100% !important;
+					width: auto !important;
 					display: inline-block;
 					text-align: center;
 				}
@@ -325,7 +343,7 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt="" /></a>
+				<a class="navbar-brand" href="index.html"><img src="assets/img/logo-2.png" alt="" /></a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -339,8 +357,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarScroll">
 					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
-						
-						<li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
 							<a
 								class="nav-link dropdown-toggle"
 								href="#"
@@ -496,7 +513,7 @@
 				display: flex;
 				align-items: center;
 				text-decoration: none;
-				color: #0ddcd0;
+				color: #F08700;
 				margin: 0;
 			}
 
@@ -559,7 +576,7 @@
 			}
 			.login-form input:focus,
 			.register-form input:focus {
-				border: 1px solid #0ddcd0;
+				border: 1px solid #F08700;
 			}
 			.login-form input::placeholder,
 			.register-form input::placeholder {
@@ -576,7 +593,7 @@
 				font-size: 18px;
 				line-height: 22px;
 				text-align: center;
-				background: #0ddcd0;
+				background: #F08700;
 
 				color: #1d1d1d;
 				border: none;
@@ -671,7 +688,7 @@
 				font-size: 14px;
 				line-height: 17px;
 
-				color: #0ddcd0;
+				color: #F08700;
 				text-decoration: none;
 			}
 			.privacy-policy a span {
@@ -856,7 +873,7 @@
 				font-size: 48px;
 				line-height: 54px;
 				letter-spacing: 0.05em;
-				color: #ffffff;
+				color: #384866;
 			}
 			.hero-banner .content-sec span {
 				font-family: var(--main-font-family);
@@ -865,7 +882,7 @@
 				font-size: 60px;
 				line-height: 73px;
 				letter-spacing: 0.05em;
-				-webkit-text-stroke: 1px #0ddcd0;
+				-webkit-text-stroke: 1px #F08700;
 				color: transparent;
 			}
 			.hero-banner .content-sec p {
@@ -885,11 +902,12 @@
 				line-height: 22px;
 				text-align: center;
 				color: #1d1d1d;
-				background: #0ddcd0;
+				background: #F08700;
 				padding: 18px;
 				text-decoration: none;
 				margin-top: 25px;
 				display: inline-block;
+                color:#fff;
 			}
 		</style>
 		<section class="hero-banner">
@@ -910,7 +928,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="hero-img">
-							<img src="assets/img/Tennis-girl.png" alt="" class="img-fluid" />
+							<img src="assets/img/Tennis-girl-1.png" alt="" class="img-fluid" />
 						</div>
 					</div>
 				</div>
@@ -921,13 +939,7 @@
 		<!-- About Section -->
 		<style>
 			.about-wrapper {
-				/* position: relative;
-				background-image: url(assets/img/about-bg.jpg);
-				width: 100%;
-				height: 100%;
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: 50% 0%; */
+				padding: 0px 250px;
 			}
 			.about-content {
 				text-align: center;
@@ -974,10 +986,11 @@
 				line-height: 17px;
 				color: #1d1d1d;
 				text-decoration: none;
-				background-color: #0ddcd0;
+				background-color: #F08700;
 				padding: 11px 20px;
-				border: 1px solid #0ddcd0;
+				border: 1px solid #F08700;
 				transition: all .2s ease;
+                color:#fff;
 			}
 			.tournaments:hover{
 				color: #fff;
@@ -997,7 +1010,7 @@
 				transition: all .2s ease;
 			}
 			.ranking:hover {
-				color: #0ddcd0;
+				color: #F08700;
 			}
 			.caption h1 {
 				font-family: 'Montserrat';
@@ -1018,7 +1031,7 @@
 				transition: border 0.2s ease-in;
 			}
 			.event-wrapper:hover {
-				border: 2px solid #0ddcd0;
+				border: 2px solid #F08700;
 				padding: 7px;
 				transition: border 0.2s ease-in;
 			}
@@ -1092,6 +1105,7 @@
 			} */
 			.event-section{
 				top: -125px;
+				width: 986px;
 				position: relative;
 			}
 		</style>
@@ -1101,7 +1115,7 @@
 				<div class="event-section">
 					
 					<div class="row d-flex justify-content-center">
-						<div class="col-md-6 col-xl-3 col-6 p-2">
+						<div class="col-12 col-md-6 col-xl-4 col-6 p-2">
 							<div class="event-wrapper">
 								<div class="event-img">
 									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
@@ -1117,7 +1131,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xl-3 col-6 p-2">
+						<div class="col-12 col-md-6 col-xl-4 col-6 p-2">
 							<div class="event-wrapper">
 								<div class="event-img">
 									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
@@ -1133,7 +1147,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xl-3 col-6 p-2">
+						<div class="col-12 col-md-6 col-xl-4 col-6 p-2">
 							<div class="event-wrapper">
 								<div class="event-img">
 									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
@@ -1149,9 +1163,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row d-flex justify-content-center">
-						<div class="col-md-6 col-xl-3 col-6 p-2">
+						<div class="col-12 col-md-6 col-xl-4 col-6 p-2">
 							<div class="event-wrapper">
 								<div class="event-img">
 									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
@@ -1167,7 +1179,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xl-3 col-6 p-2">
+						<div class="col-12 col-md-6 col-xl-4 col-6 p-2">
 							<div class="event-wrapper">
 								<div class="event-img">
 									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
@@ -1183,7 +1195,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xl-3 col-6 p-2">
+						<div class="col-12 col-md-6 col-xl-4 col-6 p-2">
 							<div class="event-wrapper">
 								<div class="event-img">
 									<img src="assets/img/Rank/3.jpg" alt="" class="img-fluid" />
@@ -1215,7 +1227,22 @@
 			</div>
 		</section>
 
-	
+		<!-- <section class="p-5">
+			<div class="row d-flex justify-content-center statics">
+				<div class="col-md-3 text-center">
+					<h3 class="count-number counter">430</h3>
+					<p class="count-text">Matches</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<h3 class="count-number counter">50</h3>
+					<p class="count-text">Tournaments</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<h3 class="count-number counter">968</h3>
+					<p class="count-text">Players</p>
+				</div>
+			</div>
+		</section> -->
 		<!-- About Section -->
 
 		<!-- Tournament Section -->
@@ -1223,13 +1250,13 @@
 			.tournament {
 				position: relative;
 				padding: 100px 170px;
-				padding-top:0 !important;
+                padding-top:0 !important;
 			}
 			.tournament h2 {
 				font-weight: 600;
 				font-size: 44px;
 				line-height: 54px;
-				color: #ffffff;
+				color: #384866;
 			}
 			.tournament p {
 				font-style: normal;
@@ -1250,7 +1277,7 @@
 			}
 			.tournament .tournament-event-box:hover {
 				transform: scale(1.1);
-				border: 2px solid #0ddcd0;
+				border: 2px solid #F08700;
 				transition: all 0.5s ease-in-out;
 			}
 			.tournament .tournament-event-box .title {
@@ -1258,7 +1285,7 @@
 				font-weight: 500;
 				font-size: 24px;
 				line-height: 29px;
-				color: #f6f6f7;
+				color: #334360;
 				margin-bottom: 40px;
 			}
 			.tournament .tournament-event-box .location {
@@ -1266,7 +1293,7 @@
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 22px;
-				color: #f6f6f7;
+				color: #334360;
 				opacity: 0.8;
 				margin-bottom: 12px;
 			}
@@ -1275,7 +1302,7 @@
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 22px;
-				color: #f6f6f7;
+				color: #334360;
 				opacity: 0.8;
 			}
 			.tournament .tournament-event-box .badge {
@@ -1284,11 +1311,11 @@
 				font-size: 12px;
 				line-height: 15px;
 				text-align: center;
-				color: #f6f6f7;
+				color: #334360;
 				position: absolute;
 				top: 5px;
 				right: 5px;
-				background: rgba(250, 250, 250, 0.1);
+				background: rgba(56, 72, 102, 0.1);
 				border-radius: 0;
 				padding: 5px 12px;
 			}
@@ -1374,7 +1401,7 @@
 			<div class="container-fluid">
 				<h2 class="main-header text-center">Media</h2>
 				<svg class="strock" width="8" height="60" viewBox="0 0 8 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<rect width="8" height="60" fill="#F6F6F7" />
+					<rect width="8" height="60" fill="#334360" />
 				</svg>
 
 				<div class="row d-flex justify-content-center gallery">
@@ -1455,9 +1482,10 @@
 				padding-bottom: 100px;
 			}
 			.season-wiiners .winners-list-wrapper {
-				background: #4f98b0;
+				/* background: #4f98b0; */
 				border-radius: 20px;
 				padding: 30px;
+                border:1px solid #F08700;
 			}
 			.season-wiiners .wiiner-img img {
 				width: 140px;
@@ -1473,7 +1501,7 @@
 				line-height: 35px;
 				margin: 0;
 
-				color: #fafafa;
+				color: #384866;
 			}
 			.season-wiiners .winners-list-wrapper .season {
 				font-style: normal;
@@ -1481,7 +1509,7 @@
 				font-size: 16px;
 				line-height: 20px;
 				margin: 0;
-				color: #fafafa;
+				color: #384866;
 			}
 
 			.season-wiiners .winners-list-wrapper .card-box {
@@ -1507,6 +1535,7 @@
 				<div class="row d-flex justify-content-center">
 					<div class="content-sec">
 						<h2 class="main-header text-center">Season</h2>
+					
 					</div>
 					<div class="col-md-3 winners-box">
 						<div class="winners-list-wrapper">
@@ -1587,17 +1616,17 @@
 				font-weight: 500;
 				font-size: 18px;
 				line-height: 22px;
-				color: #f6f6f7;
+				color: #334360;
 				margin-bottom: 7px;
 
-				color: #f6f6f7;
+				color: #334360;
 			}
 			.contact-us .icon .list p {
 				font-style: normal;
 				font-weight: 500;
 				font-size: 18px;
 				line-height: 22px;
-				color: #f6f6f7;
+				color: #334360;
 				opacity: 0.8;
 				margin: 0;
 			}
@@ -1609,13 +1638,13 @@
 				background: transparent;
 				outline: none;
 				border: none;
-				border: 1px solid #f6f6f7;
+				border: 1px solid #334360;
 				color: #fff;
 				padding: 24px;
 			}
 			.contact-us .contact-form input:focus,
 			.contact-us .contact-form textarea:focus {
-				border: 1px solid #0ddcd0;
+				border: 1px solid #F08700;
 				transition: all 0.3s ease;
 			}
 			.contact-us .contact-form input {
@@ -1628,7 +1657,7 @@
 				font-size: 16px;
 				line-height: 22px;
 				margin-bottom: 4px;
-				color: #f6f6f7;
+				color: #334360;
 			}
 			.contact-us .contact-form input::placeholder,
 			.contact-us .contact-form textarea::placeholder {
@@ -1636,7 +1665,7 @@
 				font-weight: 400;
 				font-size: 16px;
 				line-height: 22px;
-				color: #f6f6f7;
+				color: #334360;
 				opacity: 0.6;
 			}
 			.contact-us .contact-form input[type='submit'] {
@@ -1647,7 +1676,7 @@
 				color: #1d1d1d;
 				border: none !important;
 				text-align: left;
-				background: #0ddcd0 !important;
+				background: #F08700 !important;
 				width: 165px;
 				padding: 20px !important;
 				align-items: end;
@@ -1664,25 +1693,25 @@
 					<div class="col-md-6 .justify-content-sm-end">
 						<h2 class="main-header text-left">contact us</h2>
 						<svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="8" width="8" height="60" transform="rotate(-90 0 8)" fill="#F6F6F7" />
+							<rect y="8" width="8" height="60" transform="rotate(-90 0 8)" fill="#334360" />
 						</svg>
 						<div class="social-icons-list">
 							<div class="icon">
-								<img src="assets/img/icons/whats-app-icon.svg" alt="" />
+								<img src="assets/img/icons/wh.svg" alt="" />
 								<div class="list">
 									<h4>Whatsapp</h4>
 									<p>+971 52 175 0000</p>
 								</div>
 							</div>
 							<div class="icon">
-								<img src="assets/img/icons/phone-icon.svg" alt="" />
+								<img src="assets/img/icons/ph.svg" alt="" />
 								<div class="list">
 									<h4>Phone</h4>
 									<p>+971 52 175 0000</p>
 								</div>
 							</div>
 							<div class="icon">
-								<img src="assets/img/icons/envolope-icon.svg" alt="" />
+								<img src="assets/img/icons/email.svg" alt="" />
 								<div class="list">
 									<h4>Email</h4>
 									<p>info@tennistour.com</p>
@@ -1716,6 +1745,7 @@
 				padding: 180px 290px 60px 290px;
 				background: #4f98b0;
 				position: relative;
+                color:#fff;
 			}
 
 			.footer p {
@@ -1750,7 +1780,7 @@
 		<div class="footer">
 			<div class="container">
 				<div class="row">
-					<h2 class="main-header text-center">achieve more in tennis!</h2>
+					<h2 class="main-header text-center" style="color: #fff;">achieve more in tennis!</h2>
 					<p class="text-center">
 						Tennis Tour’s main objective is to immerse young players into a regulated competitive environment, giving
 						the opportunity to advance their careers from grassroots to professional level.
